@@ -1,6 +1,4 @@
-Here’s a beautifully formatted and visually **engaging `README.md`** version of your content, ready to copy-paste into your project:
 
----
 
 # 🛒 E-Com Store
 
@@ -80,12 +78,3 @@ Visit 👉 [http://localhost:3000](http://localhost:3000)
 - ⚠️ Stripe product IDs are assumed to be valid — URL tampering isn’t handled in this version.
 - ✅ A real Stripe account is required to test production payments (test mode works freely).
 
----
-
-Let me know if you'd like:
-
-- Screenshots
-- Hosted demo badge
-- Deployment instructions (e.g., Vercel)
-
-I can add those too!
