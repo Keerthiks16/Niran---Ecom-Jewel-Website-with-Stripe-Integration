@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+E-Com Store
+An elegant and responsive e-commerce web app built with Next.js 14, Stripe, Tailwind CSS, and Zustand for state management.
 
-## Getting Started
+🚀 How to Run the Project
+Clone the Repository
 
-First, run the development server:
+bash
+Copy
+Edit
+git clone https://github.com/your-username/ecom-store.git
+cd ecom-store
+Install Dependencies
 
-```bash
+bash
+Copy
+Edit
+npm install
+Set Up Environment Variables
+
+Create a .env.local file at the root and add:
+
+env
+Copy
+Edit
+STRIPE_SECRET_KEY=sk_test_...
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+Replace the Stripe keys with your actual Stripe API keys.
+
+Run the Development Server
+
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open in Browser
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate to http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🛠 Tech Stack Used
+Tool / Library	Purpose
+Next.js 14 (App Router)	Frontend + Backend framework
+Stripe	Payment gateway and product management
+Tailwind CSS	Utility-first styling
+ShadCN/UI	Elegant UI components
+Zustand	Lightweight global state for cart
+TypeScript	Type-safe development
+Lucide React	Icons used across the UI
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📌 Features
+Stripe-powered product listing and checkout
 
-## Learn More
+Responsive product carousel and detail pages
 
-To learn more about Next.js, take a look at the following resources:
+Add-to-cart with quantity controls
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Persistent cart using zustand/middleware
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Checkout integration with Stripe-hosted secure payment
 
-## Deploy on Vercel
+Clean UI with Tailwind + ShadCN
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📄 Notes / Assumptions
+All products and pricing are managed via Stripe Dashboard.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Stripe Checkout handles all payment logic securely; no sensitive card data is handled in-app.
+
+Assumes the user will not modify Stripe product IDs manually in the URL.
+
+This project is frontend-heavy with minimal backend code (just one API route).
+
+You must have a valid Stripe account to test real payments.
