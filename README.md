@@ -1,72 +1,91 @@
-E-Com Store
-An elegant and responsive e-commerce web app built with Next.js 14, Stripe, Tailwind CSS, and Zustand for state management.
+Here’s a beautifully formatted and visually **engaging `README.md`** version of your content, ready to copy-paste into your project:
 
-🚀 How to Run the Project
-Clone the Repository
+---
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/ecom-store.git
-cd ecom-store
-Install Dependencies
+# 🛒 E-Com Store
 
-bash
-Copy
-Edit
+An elegant, **responsive e-commerce web app** built with cutting-edge tools like **Next.js 14**, **Stripe**, **Tailwind CSS**, and **Zustand** for smooth user experience and modern design.
+
+---
+
+## 🚀 How to Run the Project
+
+### 🔁 Clone the Repository
+
+```bash
+git clone https://github.com/Keerthiks16/geer-intern-assignment.git
+cd geer-intern-assignment
+```
+
+### 📦 Install Dependencies
+
+```bash
 npm install
-Set Up Environment Variables
+```
 
-Create a .env.local file at the root and add:
+### 🔐 Set Up Environment Variables
 
-env
-Copy
-Edit
+Create a `.env.local` file in the root and add:
+
+```env
 STRIPE_SECRET_KEY=sk_test_...
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
-Replace the Stripe keys with your actual Stripe API keys.
+```
 
-Run the Development Server
+> ⚠️ Replace with your actual Stripe API keys from the [Stripe Dashboard](https://dashboard.stripe.com/apikeys).
 
-bash
-Copy
-Edit
+### 🧪 Run the Development Server
+
+```bash
 npm run dev
-Open in Browser
+```
 
-Navigate to http://localhost:3000
+### 🌐 Open in Browser
 
-🛠 Tech Stack Used
-Tool / Library	Purpose
-Next.js 14 (App Router)	Frontend + Backend framework
-Stripe	Payment gateway and product management
-Tailwind CSS	Utility-first styling
-ShadCN/UI	Elegant UI components
-Zustand	Lightweight global state for cart
-TypeScript	Type-safe development
-Lucide React	Icons used across the UI
+Visit 👉 [http://localhost:3000](http://localhost:3000)
 
-📌 Features
-Stripe-powered product listing and checkout
+---
 
-Responsive product carousel and detail pages
+## 🛠 Tech Stack Used
 
-Add-to-cart with quantity controls
+| 🔧 Tool / Library           | 💡 Purpose                          |
+| --------------------------- | ----------------------------------- |
+| **Next.js 14 (App Router)** | Full-stack React framework          |
+| **Stripe**                  | Payment gateway + product backend   |
+| **Tailwind CSS**            | Utility-first modern styling        |
+| **ShadCN/UI**               | Pre-built styled components         |
+| **Zustand**                 | Lightweight state management (cart) |
+| **TypeScript**              | Type safety across the codebase     |
+| **Lucide React**            | Crisp and modern icon set           |
 
-Persistent cart using zustand/middleware
+---
 
-Checkout integration with Stripe-hosted secure payment
+## ✨ Features
 
-Clean UI with Tailwind + ShadCN
+- ✅ **Stripe-powered product listings and secure checkout**
+- 🖼️ **Dynamic product carousel & responsive product cards**
+- 🛒 **Add-to-cart with quantity selection**
+- 💾 **Persistent cart using Zustand middleware**
+- 🔐 **Stripe-hosted secure payment flow**
+- 🎨 **Modern UI with Tailwind CSS + ShadCN**
 
-📄 Notes / Assumptions
-All products and pricing are managed via Stripe Dashboard.
+---
 
-Stripe Checkout handles all payment logic securely; no sensitive card data is handled in-app.
+## 📄 Notes & Assumptions
 
-Assumes the user will not modify Stripe product IDs manually in the URL.
+- 📦 All product data is managed via the [Stripe Dashboard](https://dashboard.stripe.com/products).
+- 🔐 Payments are handled by **Stripe Checkout**, ensuring no card data ever hits your server.
+- 🧩 Only one backend API route is used (`/api/checkout`) for creating checkout sessions.
+- ⚠️ Stripe product IDs are assumed to be valid — URL tampering isn’t handled in this version.
+- ✅ A real Stripe account is required to test production payments (test mode works freely).
 
-This project is frontend-heavy with minimal backend code (just one API route).
+---
 
-You must have a valid Stripe account to test real payments.
+Let me know if you'd like:
+
+- Screenshots
+- Hosted demo badge
+- Deployment instructions (e.g., Vercel)
+
+I can add those too!
