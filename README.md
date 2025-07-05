@@ -11,8 +11,8 @@ An elegant, **responsive e-commerce web app** built with cutting-edge tools like
 ### 🔁 Clone the Repository
 
 ```bash
-git clone https://github.com/Keerthiks16/geer-intern-assignment.git
-cd geer-intern-assignment
+git clone https://github.com/Keerthiks16/Niran---Ecom-Jewel-Website-with-Stripe-Integration.git
+cd Niran---Ecom-Jewel-Website-with-Stripe-Integration
 ```
 
 ### 📦 Install Dependencies
