@@ -1,6 +1,6 @@
 
 
-# 🛒 E-Com Store
+# 💍 Niran
 
 An elegant, **responsive e-commerce web app** built with cutting-edge tools like **Next.js 14**, **Stripe**, **Tailwind CSS**, and **Zustand** for smooth user experience and modern design.
 
